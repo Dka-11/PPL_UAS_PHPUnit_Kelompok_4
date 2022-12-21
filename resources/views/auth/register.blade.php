@@ -152,7 +152,7 @@
                         <label class="col-md-4 control-label">Kecamatan</label>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="kecamatan" value="{{ old('district') }}" required>
+                            <input type="text" class="form-control" name="district" value="{{ old('district') }}" required>
 
                             @if ($errors->has('district'))
                             <span class="help-block">
@@ -167,7 +167,7 @@
                         <label class="col-md-4 control-label">Kelurahan</label>
 
                         <div class="col-md-6">
-                            <input type="text" class="form-control" name="kelurahan" value="{{ old('state') }}" required>
+                            <input type="text" class="form-control" name="state" value="{{ old('state') }}" required>
 
                             @if ($errors->has('state'))
                             <span class="help-block">
@@ -176,7 +176,7 @@
                             @endif
                         </div>
                     </div>
-                    
+
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                         <label class="col-md-4 control-label">E-mail</label>
 
